@@ -4,48 +4,55 @@ p {
 
 .credit-card {
     background-color: #425ecd;
-    font-size: large;
+    font-size: 20px;
     height: 240px;
-    width: 360px;
     border-radius: 10px;
     margin: 30px 0 0 20px;
     display: flex;
     flex-direction: column;
 }
 
-.credit-card-front > div {
-    margin-left: 40px;
+.credit-card-front {
+    display: flex;
+    justify-content: flex-end;
+    width: 340px;
+    padding-left: 20px;
 }
 
-.credit-card-front > p {
-    margin-left: 40px;
+.credit-card-front .name {
+    margin-bottom: 20px;
 }
 
-.credit-card-front > .number{
+.credit-card-front .number {
     margin-top: 100px;
-    font-size: xx-large;
+    font-size: 32px;
 }
 
-.credit-card-front > .information-wrapper {
-    display: inline-flex;
+.credit-card-front .information-wrapper {
+    display: flex;
     align-items: center;
 }
 
-.credit-card-front > .information-wrapper > p:first-child {
+.credit-card-front .information-wrapper p:first-child {
     text-transform: uppercase;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     margin: 10px 10px 10px 0;
     width: 50px;
 }
 
-.magnetic-strip{
+.credit-card-back {
+    width: 360px;
+}
+
+.magnetic-strip {
     height: 50px;
     background-color: black;
     margin: 30px 0;
 }
 
-.credit-card-back > .information-wrapper {
+.credit-card-back .information-wrapper {
     height: 35px;
     width: 50%;
     display: flex;
@@ -57,15 +64,14 @@ p {
     padding-left: 10px;
 }
 
-.credit-card-back > .information-wrapper > .name {
+.credit-card-back .name {
     font-family: "Allura", cursive;
     font-size: x-large;
     font-style: normal;
     margin-left: 10px;
 }
 
-.credit-card-back > .information-wrapper > .number{
+.credit-card-back .information-wrapper .number {
     justify-content: space-around;
-    margin: 0;
     align-self: flex-start;
 }
